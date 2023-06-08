@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous"
+     referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Resto</title>
+</head>
+<body>
+    <section class="header">
+            <nav>
+                <a href="#" class="logo"><span>R</span>esto</a>
+                <div class="navbar" id="navbar">
+                    <i class="fa fa-times" onclick="fermer_menu()"></i>
+                    <ul>
+                        <li><a href="">Acceuil</a></li>
+                        <li><a href="">A propos</a></li>
+                        <li><a href="">Menu</a></li>
+                        <li><a href="">Experts</a></li>
+                        <li><a href="">Témoignages</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="ouvrir_menu()"></i>
+            </nav>
+            <div class="text">
+                <h1>Goûter Aux Meilleurs Plats</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Alias at ipsum, omnis molestiae repellendus optio tenetur
+                      natus voluptas, aliquam libero ut minus odit 
+                    culpa dolorum error!<br> Debitis error numquam officiis.</p>
+                    <a href="" class="btn">Voir Le Menu</a>
+            </div>
+    </section>
+    <script>
+        let navbar = document.getElementById("navbar");
+        function ouvrir_menu() {
+        navbar.style.right = "0px";
+}
+      function fermer_menu() {
+      navbar.style.right = "-200px";
+}
+    </script>
